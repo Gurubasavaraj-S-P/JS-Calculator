@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="rShow">
+            <input type="text" id="calc" value="">
+        </div>
+        <div class="keys">
+            <div class="numKey" id="clear" onclick="lear()">C</div>
+            <div class="numKey" id="div" onclick="addOp(`/.`)">/</div>
+            <div class="numKey" id="multi" onclick="addOp(`*`)">X</div>
+            <div class="numKey" id="add" onclick="addOp(`+`)">+</div>
+            <div class="numKey" id="9" onclick="addNum(9)">9</div>
+            <div class="numKey" id="8" onclick="addNum(8)">8</div>
+            <div class="numKey" id="7" onclick="addNum(7)">7</div>
+            <div class="numKey" id="sub" onclick="addOp(`-`)">-</div>
+            <div class="numKey" id="6" onclick="addNum(6)">6</div>
+            <div class="numKey" id="5" onclick="addNum(5)">5</div>
+            <div class="numKey" id="4" onclick="addNum(4)">4</div>
+            <div class="numKey" id="." onclick="addNum(`.`)">.</div>
+            <div class="numKey" id="3" onclick="addNum(3)">3</div>
+            <div class="numKey" id="2" onclick="addNum(2)">2</div>
+            <div class="numKey" id="1" onclick="addNum(1)">1</div>
+            <div class="numKey" id="=" onclick="calculate()">=</div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
